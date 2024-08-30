@@ -1,0 +1,14 @@
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+	allowedSignersFile = /Users/fredrikdahlgren/.config/git/allowed_signers
+[commit]
+	gpgsign = true
+[user]
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILJ6pSOGU51HaOWCcLn6GK1ujW8jYEBWsZHF3oN9+viZ
+	name = Fredrik Dahlgren
+	email = fredrik.dahlgren@trailofbits.com
+[core]
+	editor = nvim
+	excludesfile = /Users/fredrikdahlgren/.gitignore

@@ -1,0 +1,32 @@
+# Set locale because locale
+export LANG=en_US.UTF-8
+
+# Set history file
+HISTSIZE=10000000
+SAVEHIST=10000000
+HISTFILE=~/.zsh_history
+
+# Use exa instead of ls
+alias ls=exa
+
+# Add Homebrew to path
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+export FZF_DEFAULT_OPTS=" \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
+
+# Add ~/.local/bin to path
+export PATH="$PATH:$HOME/.local/bin"
+
+# Add CodeQL to path
+export PATH="$PATH:$HOME/.codeql"
+
+# Silence Starship log messages
+export STARSHIP_LOG="error"
+
+# Start Starship
+eval "$(starship init zsh)"
+
+# opam configuration
+[[ ! -r /Users/fredrikdahlgren/.opam/opam-init/init.zsh ]] || source /Users/fredrikdahlgren/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

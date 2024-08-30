@@ -1,0 +1,11 @@
+[[ssh-keys]]
+item = "Github Authentication Key"
+vault = "Personal"
+
+[[ssh-keys]]
+item = "Github Signing Key"
+vault = "Personal"
+
+[[ssh-keys]]
+item = "Digital Ocean (Trail of Bits)"
+vault = "Personal"
